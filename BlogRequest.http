@@ -1,0 +1,25 @@
+@url = http://localhost:8080
+
+### Obtiene todos los blogs
+GET {{url}}/blogs/
+
+### Obtiene un blog por id
+GET {{url}}/blogs/1
+
+### Crea un blog
+POST {{url}}/blogs/
+Content-Type: application/json
+
+{
+    "title": "Blog 1",
+    "content": "Content 1"
+}
+
+### Actualiza un blog
+PUT {{url}}/blogs/1
+Content-Type: application/json
+
+{
+    "title": "Blog 1 Updated",
+    "content": "Content 1 Updated"
+}
